@@ -17,12 +17,15 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
   only include the reflection metadata and not the code for the reflected class/method
     * Search for `HelloWorldPrinter` in "Used Classes" report from Graal
       in `reflection-query-only`
-* Even generating the `ReflectionAccessorHolder` for many classes (100) doesn't increase
-  size significantly
-    * TODO: This needs more testing, as this contradicts `no-reflection-many-big-classes`
-      vs `simple-reflection-many-big-classes`. Maybe test with more classes?
-    * Compare binary size for `simple-reflection-many-classes` methods
-      with `no-reflection-many-classes`
+* Using reflection with a small number of called methods (constructors count, too) doesn't
+  matter that much
+    * The base infrastructure used by native-image dominates the executable size
+* Using reflection with a big number (>= 10000) of called methods increases the executable
+  size
+    * The code region grows a little (Graal includes the `ReflectionAccessorHolder` in the
+      executable)
+    * The heap region of the executable grows faster than the code region. This is the
+      most dominant factor of the executable size
 * When using many classes (100) with many methods each (100), the reflection based
   executable is twice as big as the one without reflection
     * Compare `no-reflection-many-big-classes` with `simple-reflection-many-big-classes`:
@@ -30,6 +33,10 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
 * When including reflection invoke in `reflect-config.json` for methods which are not
   called at runtime, native-image adds the code to the executable
     * This was expected and can bloat the executable with dead code
+* When using reflection, minimizing the reflectifly called elements (methods /
+  constructors) improves the executable size
+    * Bigger classes with more methods are better than small classes with less methods,
+      because every class has a constructor, which counts towards the executable size
 
 ## Analysis of executable size
 
