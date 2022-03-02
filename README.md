@@ -37,11 +37,14 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
   constructors) improves the executable size
     * Bigger classes with more methods are better than small classes with less methods,
       because every class has a constructor, which counts towards the executable size
+    * Compare `simple-reflection-many-big-classes` and `simple-reflection-10000-classes`
 
 ## Analysis of executable size
 
-You can use the [GraalVM dashboard](https://www.graalvm.org/dashboard/?ojr=dashboard) to analyze the contents of an executable. This dashboards reads a `bgv` file, which can be generated
-in the native build using the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
+You can use the [GraalVM dashboard](https://www.graalvm.org/dashboard/?ojr=dashboard) to
+analyze the contents of an executable. This dashboards reads a `bgv` file, which can be
+generated in the native build using
+the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
 
 ### no-reflection-many-big-classes vs simple-reflection-many-big-classes
 
