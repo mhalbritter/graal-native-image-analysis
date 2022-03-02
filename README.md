@@ -24,7 +24,8 @@ For more details, read the section "Analysis of executable size" below.
       most dominant factor of the executable size
 * When including reflection invoke in `reflect-config.json` for methods which are not
   called at runtime, native-image adds the code to the executable
-    * This was expected and can bloat the executable with dead code
+    * This effectifly disables the tree-shaking for the classes and can bloat the
+      executable with dead code
 * When using reflection, minimizing the reflectifly called elements (methods /
   constructors) improves the executable size
     * Bigger classes with more methods are better than small classes with less methods,
@@ -45,6 +46,7 @@ For more details, read the section "Analysis of executable size" below.
   only include the reflection metadata and not the code for the reflected class/method
     * Search for `HelloWorldPrinter` in "Used Classes" report from Graal
       in `reflection-query-only`
+    * In other words: only using reflection querying doesn't disable the tree-shaking
 
 ### Executable size
 
@@ -253,7 +255,7 @@ in `no-reflection-many-classes`.
 
 ### simple-reflection-many-big-classes vs simple-reflection-10000-classes
 
-Question: If we use reflection, what is better? Many small classes or few big classes?
+Question: If we use reflection, what is better: Many small classes or few big classes?
 
 `simple-reflection-many-big-classes` (100 classes with 1 constructor and 100 methods each
 = 10100 total):
@@ -311,7 +313,7 @@ takes 3,21 MB of executable heap.
 
 ### no-reflection-many-big-classes vs no-reflection-10000-classes
 
-Question: If we don't reflection, what is better? Many small classes or few big classes?
+Question: If we don't reflection, what is better: Many small classes or few big classes?
 
 `no-reflection-many-big-classes` (100 classes with 100 methods each):
 
