@@ -1,3 +1,10 @@
+# Reflection plot
+
+Data for the chart which shows executable size in relation to included methods
+in `reflect-config.json`.
+
+For the [raw data see here](reflection-plot.ods).
+
 ## 0 methods
 
 ```
