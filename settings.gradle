@@ -18,4 +18,5 @@ include 'simple-reflection-many-big-classes'
 include 'no-reflection-many-big-classes'
 include 'simple-reflection-10000-classes'
 include 'no-reflection-10000-classes'
+include 'reflection-plot'
 

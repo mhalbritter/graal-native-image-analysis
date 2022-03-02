@@ -1,0 +1,27 @@
+[
+	{
+		"name": "reflectionplot.classes.Class0",
+		"methods": [
+			{
+				"name": "<init>",
+				"parameterTypes": []
+			},
+			{
+				"name": "print0",
+				"parameterTypes": []
+			},
+			{
+				"name": "print1",
+				"parameterTypes": []
+			},
+			{
+				"name": "print2",
+				"parameterTypes": []
+			},
+			{
+				"name": "print3",
+				"parameterTypes": []
+			}
+		]
+	}
+]

@@ -2,7 +2,7 @@
 [
 <#list 0 ..< model.numberOfClasses as i>
 	{
-		"name": "simplereflection.manyclasses.classes.Class${i}",
+		"name": "reflectionplot.classes.Class${i}",
 		"methods": [
 			{
 				"name": "<init>",
@@ -12,9 +12,9 @@
 			{
 				"name": "print${j}",
 				"parameterTypes": []
-			},
+			}<#if j?has_next >,</#if>
     </#list>
 		]
-	},
+	}<#if i?has_next >,</#if>
 </#list>
 ]

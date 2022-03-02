@@ -20,8 +20,8 @@ import generator.model.ReflectConfigModel;
  * @author Moritz Halbritter
  */
 class Generator {
-	public static final int NUMBER_OF_CLASSES = 10000;
-	public static final int METHODS_PER_CLASS = 1;
+	public static final int NUMBER_OF_CLASSES = 1;
+		public static final int METHODS_PER_CLASS = 16;
 
 	public static void main(String[] args) throws IOException, TemplateException {
 		Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);
@@ -32,7 +32,7 @@ class Generator {
 		cfg.setFallbackOnNullLoopVariable(false);
 		cfg.setNumberFormat("computer");
 
-		// generateClasses(cfg);
+		// generateClasses(cfg, Files.createTempDirectory("generator"));
 		// printInvocation(cfg);
 		printReflectConfig(cfg, Path.of("/tmp/reflect-config.json"));
 	}
@@ -61,13 +61,11 @@ class Generator {
 		template.process(Map.of("model", model), new PrintWriter(System.out));
 	}
 
-	private static void generateClasses(Configuration cfg) throws IOException, TemplateException {
-		Path tempDirectory = Files.createTempDirectory("generator");
-
+	private static void generateClasses(Configuration cfg, Path baseDirectory) throws IOException, TemplateException {
 		Template template = cfg.getTemplate("class.java.ftl");
 
 		for (int i = 0; i < NUMBER_OF_CLASSES; i++) {
-			Path file = tempDirectory.resolve(String.format("Class%d.java", i)).toAbsolutePath();
+			Path file = baseDirectory.resolve(String.format("Class%d.java", i)).toAbsolutePath();
 
 			ClassModel model = new ClassModel(i, METHODS_PER_CLASS);
 
