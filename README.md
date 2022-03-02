@@ -134,7 +134,7 @@ Top 10 packages in code area:                               Top 10 object types 
    6,93MB (57,52%) for image heap:   1.733 classes and 96.068 objects
    1,08MB ( 8,94%) for other data
   12,05MB in total
-------------------------------------------------------------------------------------------------------------------------
+
 Top 10 packages in code area:                               Top 10 object types in image heap:
  634,11KB java.util                                            1,78MB byte[] for general heap data
  312,30KB java.lang                                          806,47KB java.lang.String
@@ -164,7 +164,7 @@ Question: Why are the two executables nearly the same size (11,91 MB vs 11,98 MB
    6,91MB (58,05%) for image heap:   1.634 classes and 90.749 objects
    1,03MB ( 8,61%) for other data
   11,91MB in total
-------------------------------------------------------------------------------------------------------------------------
+
 Top 10 packages in code area:                               Top 10 object types in image heap:
  634,03KB java.util                                            1,75MB byte[] for general heap data
  310,51KB java.lang                                          790,63KB java.lang.String
@@ -205,8 +205,58 @@ The executable sizes are almost the same, as the base infrastructure needed for 
 native-image just shadows the little bit of code which is needed for the classes
 in `no-reflection-many-classes`.
 
+### simple-reflection-many-big-classes vs simple-reflection-10000-classes
+
+`simple-reflection-many-big-classes` (100 classes with 100 methods each):
+
+```
+   8,88MB (25,92%) for code area:   27.477 compilation units
+  21,91MB (63,99%) for image heap:   1.733 classes and 324.067 objects
+   3,45MB (10,08%) for other data
+  34,24MB in total
+  
+Top 10 packages in code area:                               Top 10 object types in image heap:
+   3,01MB simplereflection.manyclasses.big.classes             3,75MB java.util.LinkedHashMap
+   1,89MB com.oracle.svm.core.reflect                          3,74MB byte[] for general heap data
+ 634,11KB java.util                                            3,70MB java.lang.reflect.Method
+ 312,30KB java.lang                                            2,50MB s.r.a.AnnotatedTypeFactory$AnnotatedTypeBaseImpl
+ 265,80KB java.text                                            1,40MB java.lang.String
+ 235,43KB java.util.regex                                      1,18MB byte[] for java.lang.String
+ 200,68KB com.oracle.svm.jni                                 641,77KB java.lang.reflect.AnnotatedType[]
+ 176,75KB java.util.concurrent                               609,64KB java.lang.Class
+ 143,38KB java.math                                          418,97KB java.util.HashMap$Node
+  94,21KB java.util.logging                                  343,15KB java.lang.Class[]
+      ... 116 additional packages                                 ... 764 additional object types  
+```
+
+`simple-reflection-10000-classes` (10000 classes with 1 method each):
+
+```
+  10,84MB (19,44%) for code area:   37.377 compilation units
+  38,88MB (69,72%) for image heap:  11.633 classes and 623.962 objects
+   6,05MB (10,85%) for other data
+  55,77MB in total
+
+Top 10 packages in code area:                               Top 10 object types in image heap:
+   3,86MB com.oracle.svm.core.reflect                          5,57MB java.util.LinkedHashMap
+   3,01MB simplereflection.classes10k.classes                  4,75MB byte[] for general heap data
+ 634,03KB java.util                                            3,70MB s.r.a.AnnotatedTypeFactory$AnnotatedTypeBaseImpl
+ 312,30KB java.lang                                            3,70MB java.lang.reflect.Method
+ 265,80KB java.text                                            3,21MB java.lang.reflect.Constructor
+ 235,43KB java.util.regex                                      2,79MB java.lang.Class
+ 200,68KB com.oracle.svm.jni                                   2,34MB byte[] for java.lang.String
+ 176,75KB java.util.concurrent                                 2,30MB java.lang.String
+ 143,38KB java.math                                            1,38MB com.oracle.svm.core.hub.DynamicHub$ReflectionData
+  94,21KB java.util.logging                                    1,23MB java.lang.reflect.AnnotatedType[]
+      ... 116 additional packages                                 ... 764 additional object types
+```
+
+We can see that the 10000 classes has a bigger executable, and `com.oracle.svm.core.reflect`, which holds the `ReflectiveAccessorHolder` classes,
+is twice the size compared to `simple-reflection-many-big-classes`. I guess the reason is that, even that the method count of the print
+methods stays the same (100 classes a 100 methods vs 10000 classes a 1 method), the number of constructors is bigger (100 constructors vs 10000 constructors).
+
+This answers the question of "Which is better? Many small classes or few big classes?" - few big classes are better if they are used via reflection,
+as this minimizes the number of constructor reflection data.
+
 ## Open experiments
 
-* Which is better? Many small classes or few big classes?
-    * Both reflection / no reflection
- 

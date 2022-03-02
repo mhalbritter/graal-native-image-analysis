@@ -16,4 +16,5 @@ include 'reflection-query-only-many-classes'
 include 'generator'
 include 'simple-reflection-many-big-classes'
 include 'no-reflection-many-big-classes'
+include 'simple-reflection-10000-classes'
 

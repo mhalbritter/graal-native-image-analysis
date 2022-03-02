@@ -12,7 +12,7 @@ class Main {
 	public static void main(String[] args) throws Exception {
 		System.out.println();
 		for (int i = 0; i < NUMBER_CLASSES; i++) {
-			Class<?> clazz = Class.forName(String.format("reflectionqueryonly.manyclasses.classes.Class%d", i));
+			Class<?> clazz = Class.forName("reflectionqueryonly.manyclasses.classes.Class" + i);
 			Constructor<?>[] constructors = clazz.getDeclaredConstructors();
 			for (Constructor<?> constructor : constructors) {
 				System.out.println(constructor);

@@ -6,6 +6,5 @@ public static void main(String[] args) {
 	<#list 0 ..< model.methodsPerClass as j>
 	class${i}.print${j}();
 	</#list>
-
 </#list>
 }

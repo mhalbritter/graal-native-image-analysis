@@ -1,0 +1,3 @@
+application {
+	mainClass = 'simplereflection.classes10k.Main'
+}

@@ -1,6 +1,6 @@
 <#-- @ftlvariable name="model" type="generator.model.ClassModel" -->
 
-package noreflection.manyclasses.classes;
+package simplereflection.classes10k.classes;
 
 public class Class${model.classNo} {
 
