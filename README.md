@@ -251,12 +251,17 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 116 additional packages                                 ... 764 additional object types
 ```
 
-We can see that the 10000 classes has a bigger executable, and `com.oracle.svm.core.reflect`, which holds the `ReflectiveAccessorHolder` classes,
-is twice the size compared to `simple-reflection-many-big-classes`. I guess the reason is that, even that the method count of the print
-methods stays the same (100 classes a 100 methods vs 10000 classes a 1 method), the number of constructors is bigger (100 constructors vs 10000 constructors).
+We can see that the 10000 classes has a bigger executable,
+and `com.oracle.svm.core.reflect`, which holds the `ReflectiveAccessorHolder` classes, is
+twice the size compared to `simple-reflection-many-big-classes`. I guess the reason is
+that, even that the method count of the print methods stays the same (100 classes a 100
+methods vs 10000 classes a 1 method), the number of constructors is bigger (100
+constructors vs 10000 constructors). You can see that the `java.lang.reflect.Constructor`
+takes 3,21 MB of image heap.
 
-This answers the question of "Which is better? Many small classes or few big classes?" - few big classes are better if they are used via reflection,
-as this minimizes the number of constructor reflection data.
+This answers the question of "Which is better? Many small classes or few big classes?" -
+few big classes are better if they are used via reflection, as this minimizes the number
+of constructor reflection data.
 
 ## Open experiments
 
