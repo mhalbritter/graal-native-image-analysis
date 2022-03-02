@@ -2,21 +2,31 @@
 
 ## Learnings
 
-* Image size doesn't increase when including methods called through reflection
-  * Compare `no-reflection` and `simple-reflection`
+* Image size doesn't increase when including some methods called through reflection
+    * Compare `no-reflection` and `simple-reflection`
+    * But beware when there are many classes with many methods called through reflection,
+      see `no-reflection-many-big-classes` vs `simple-reflection-many-big-classes` below
 * Image size increases a bit when including reflection query data
-  * Compare `simple-reflection` and `reflection-query`
-  * This amounts to 256 KB executable size when including reflection query data for 100 classes with 1 constructor and 100 methods each (10100 methods in total)
-* If only reflection querying is used and not invocation, native-image is clever enough to only include the reflection metadata and not the code for the reflected class/method
-  * Search for `HelloWorldPrinter` in "Used Classes" report from Graal in `reflection-query-only`
-* native-image uses padding (or method inlining?)
-  * Binary size for `no-reflection` and `no-reflection-many-classes` is the same
-* Even generating the `ReflectionAccessorHolder` for many classes doesn't increase size significantly
-  * Compare binary size for `simple-reflection-many-classes` methods with `no-reflection-many-classes`
-* When including reflection invoke in `reflect-config.json` for methods which are not called at runtime, native-image adds the code to the executable
-  * This was expected and can bloat the executable with dead code
-* When using many classes with many methods, the reflection based executable is twice as big as the one without reflection
-  * Compare `no-reflection-many-big-classes` with `simple-reflection-many-big-classes`: 15,6 MB vs 31,0 MB
+    * Compare `simple-reflection` and `reflection-query`
+    * This amounts to 256 KB executable size when including reflection query data for 100
+      classes with 1 constructor and 100 methods each (10100 methods in total)
+* If only reflection querying is used and not invocation, native-image is clever enough to
+  only include the reflection metadata and not the code for the reflected class/method
+    * Search for `HelloWorldPrinter` in "Used Classes" report from Graal
+      in `reflection-query-only`
+* Even generating the `ReflectionAccessorHolder` for many classes (100) doesn't increase
+  size significantly
+    * TODO: This needs more testing, as this contradicts `no-reflection-many-big-classes`
+      vs `simple-reflection-many-big-classes`. Maybe test with more classes?
+    * Compare binary size for `simple-reflection-many-classes` methods
+      with `no-reflection-many-classes`
+* When using many classes (100) with many methods each (100), the reflection based
+  executable is twice as big as the one without reflection
+    * Compare `no-reflection-many-big-classes` with `simple-reflection-many-big-classes`:
+      15,6 MB vs 31,0 MB
+* When including reflection invoke in `reflect-config.json` for methods which are not
+  called at runtime, native-image adds the code to the executable
+    * This was expected and can bloat the executable with dead code
 
 ## Analysis of executable size
 
@@ -141,4 +151,7 @@ The images are of the same size, as the generated reflection code from Graal for
 ## Open experiments
 
 * Which is better? Many small classes or few big classes?
-  * Both reflection / no reflection
+    * Both reflection / no reflection
+
+* Does native-image uses padding (or method inlining?) or what is going on?
+    * Binary size for `no-reflection` and `no-reflection-many-classes` is the same
