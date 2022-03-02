@@ -17,8 +17,8 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
   only include the reflection metadata and not the code for the reflected class/method
     * Search for `HelloWorldPrinter` in "Used Classes" report from Graal
       in `reflection-query-only`
-* Using reflection with a small number of called methods (constructors count, too) doesn't
-  matter that much
+* Using reflection with a small number (~100-200) of called methods (constructors count,
+  too) doesn't matter that much
     * The base infrastructure used by native-image dominates the executable size
 * Using reflection with a big number (>= 10000) of called methods increases the executable
   size
