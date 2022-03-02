@@ -1,4 +1,7 @@
-# Graal benchmarks
+# Graal native-image experiments
+
+All experiments have been done
+with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
 
 ## Learnings
 
