@@ -48,6 +48,10 @@ the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
 
 ### no-reflection-many-big-classes vs simple-reflection-many-big-classes
 
+Method count: 100 classes with 1 constructor and 100 methods each = 10100
+
+Question: Why is the reflection based executable bigger than the code one?
+
 `no-reflection-many-big-classes`:
 
 ```
@@ -108,12 +112,18 @@ This image shows a visualization of the heap contents which are embedded in the 
 
 ![](img/simple-reflection-many-big-classes-heap.png)
 
-When comparing the reflection heap with the no reflection heap, we can see that it's a lot bigger. That's the main reason
-why the reflection image is bigger. We can see 4 MB of `LinkedHashMap`, which is not in the no reflection version. Another
-4 MB of the heap is used for `reflect.Method`, which is also not there in the no reflection version. Another 3 MB are spent
-for `sun.reflect.annotation` data, which is also not in the no reflection version.
+When comparing the reflection heap with the no reflection heap, we can see that it's a lot
+bigger. That's the main reason why the reflection image is bigger. We can see 4 MB
+of `LinkedHashMap`, which is not in the no reflection version. Another 4 MB of the heap is
+used for `reflect.Method`, which is also not there in the no reflection version. Another 3
+MB are spent for `sun.reflect.annotation` data, which is also not in the no reflection
+version.
 
 ### no-reflection-many-classes vs simple-reflection-many-classes
+
+Method count: 100 classes with 1 constructor and 1 method each = 200
+
+Question: Why is the reflection based executable not that much bigger than the code one?
 
 `no-reflection-many-classes`:
 
@@ -160,12 +170,14 @@ Top 10 packages in code area:                               Top 10 object types 
 ```
 
 The images are of the same size, as the generated reflection code from Graal for 100
-methods (100 classes with 1 method each) isn't that much compared the base infrastructure
-which is included in every executable.
+methods (100 classes with 1 constructor and 1 method each) isn't that much compared the
+base infrastructure which is included in every executable.
 
 ### no-reflection and no-reflection-many-classes
 
-Question: Why are the two executables nearly the same size (11,91 MB vs 11,98 MB)?
+Question: Why are the two executables nearly the same size (11,91 MB vs 11,98 MB), even if
+one contains 2 classes with 1 method each and the other contains 101 classes with 1 method
+each?
 
 `no-reflection`:
 
@@ -212,10 +224,12 @@ Top 10 packages in code area:                               Top 10 object types 
 ```
 
 The executable sizes are almost the same, as the base infrastructure needed for a
-native-image just shadows the little bit of code which is needed for the classes
+native-image just shadows the little of code which is needed for the classes
 in `no-reflection-many-classes`.
 
 ### simple-reflection-many-big-classes vs simple-reflection-10000-classes
+
+Question: If we use reflection, what is better? Many small classes or few big classes?
 
 `simple-reflection-many-big-classes` (100 classes with 100 methods each):
 
@@ -272,6 +286,3 @@ takes 3,21 MB of image heap.
 This answers the question of "Which is better? Many small classes or few big classes?" -
 few big classes are better if they are used via reflection, as this minimizes the number
 of constructor reflection data.
-
-## Open experiments
-
