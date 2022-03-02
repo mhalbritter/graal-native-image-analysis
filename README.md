@@ -5,11 +5,11 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
 
 ## Learnings
 
-* Image size doesn't increase when including some methods called through reflection
+* Executable size doesn't increase when including some methods called through reflection
     * Compare `no-reflection` and `simple-reflection`
     * But beware when there are many classes with many methods called through reflection,
       see `no-reflection-many-big-classes` vs `simple-reflection-many-big-classes` below
-* Image size increases a bit when including reflection query data
+* Executable size increases a bit when including reflection query data
     * Compare `simple-reflection` and `reflection-query`
     * This amounts to 256 KB executable size when including reflection query data for 100
       classes with 1 constructor and 100 methods each (10100 methods in total)
@@ -53,8 +53,8 @@ the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
 ![](img/size-methods-plot.png)
 
 This chart shows how the executable size changes in relation to the number of methods
-included in `reflect-config.json`. The more methods we include, the bigger the image size.
-Details can be found in the [reflection-plot](reflection-plot/) directory.
+included in `reflect-config.json`. The more methods we include, the bigger the executable
+size. Details can be found in the [reflection-plot](reflection-plot/) directory.
 
 ### no-reflection-many-big-classes vs simple-reflection-many-big-classes
 
@@ -127,7 +127,7 @@ executable.
 ![](img/simple-reflection-many-big-classes-heap.png)
 
 When comparing the reflection heap with the no reflection heap, we can see that it's a lot
-bigger. That's the main reason why the reflection image is bigger. We can see 4 MB
+bigger. That's the main reason why the reflection executable is bigger. We can see 4 MB
 of `LinkedHashMap`, which is not in the no reflection version. Another 4 MB of the heap is
 used for `reflect.Method`, which is also not there in the no reflection version. Another 3
 MB are spent for `sun.reflect.annotation` data, which is also not in the no reflection
@@ -183,7 +183,7 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 116 additional packages                                 ... 764 additional object types
 ```
 
-The images are of the same size, as the generated reflection code from Graal for 100
+The executables are of the same size, as the generated reflection code from Graal for 100
 methods (100 classes with 1 constructor and 1 method each) isn't that much compared the
 base infrastructure which is included in every executable.
 
@@ -238,7 +238,7 @@ Top 10 packages in code area:                               Top 10 object types 
 ```
 
 The executable sizes are almost the same, as the base infrastructure needed for a
-native-image just shadows the little of code which is needed for the classes
+`native-image` just shadows the little of code which is needed for the classes
 in `no-reflection-many-classes`.
 
 ### simple-reflection-many-big-classes vs simple-reflection-10000-classes
@@ -297,7 +297,7 @@ twice the size compared to `simple-reflection-many-big-classes`. The reason is t
 when the method count of the print methods stays the same (100 classes with 100 methods vs
 10000 classes with 1 method), the number of constructors is bigger (100 constructors vs
 10000 constructors). You can see that the `java.lang.reflect.Constructor`
-takes 3,21 MB of image heap.
+takes 3,21 MB of executable heap.
 
 ### no-reflection-many-big-classes vs no-reflection-10000-classes
 
