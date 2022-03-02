@@ -1,0 +1,17 @@
+[
+  {
+    "name": "reflectionquery.HelloWorldPrinter",
+    "queryAllDeclaredMethods": true,
+    "queryAllDeclaredConstructors": true,
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "sayHello",
+        "parameterTypes": []
+      }
+    ]
+  }
+]

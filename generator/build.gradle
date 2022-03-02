@@ -1,0 +1,9 @@
+apply plugin: 'application'
+
+application {
+	mainClass = 'generator.Generator'
+}
+
+dependencies {
+	implementation 'org.freemarker:freemarker:2.3.31'
+}

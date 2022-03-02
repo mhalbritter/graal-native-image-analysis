@@ -1,0 +1,19 @@
+pluginManagement {
+	repositories {
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'graal-benchmarks'
+include 'simple-reflection'
+include 'no-reflection'
+include 'reflection-query'
+include 'reflection-query-only'
+include 'no-reflection-many-classes'
+include 'simple-reflection-many-classes'
+include 'reflection-query-only-many-classes'
+include 'generator'
+include 'simple-reflection-many-big-classes'
+include 'no-reflection-many-big-classes'
+

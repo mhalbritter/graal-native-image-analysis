@@ -1,0 +1,7 @@
+[
+  {
+    "name": "reflectionqueryonly.HelloWorldPrinter",
+    "queryAllDeclaredMethods": true,
+    "queryAllDeclaredConstructors": true
+  }
+]

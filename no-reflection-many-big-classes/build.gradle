@@ -1,0 +1,3 @@
+application {
+	mainClass = 'noreflection.manyclasses.big.Main'
+}

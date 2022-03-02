@@ -1,0 +1,24 @@
+plugins {
+	id 'org.graalvm.buildtools.native' version '0.9.10' apply false
+}
+
+configure(subprojects) {
+	apply plugin: 'application'
+
+	repositories {
+		mavenCentral()
+	}
+}
+
+configure(subprojects - project(':generator')) {
+	apply plugin: 'org.graalvm.buildtools.native'
+
+	graalvmNative {
+		binaries {
+			main {
+				// To dump all data for the dashboard: -H:+DashboardAll
+				buildArgs.add("-H:DashboardDump=${project.name} -H:+DashboardHeap -H:+DashboardCode -H:+PrintAnalysisCallTree")
+			}
+		}
+	}
+}

@@ -1,0 +1,1302 @@
+[
+  {
+    "name": "simplereflection.manyclasses.classes.Class0",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class1",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class2",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class3",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class4",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class5",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class6",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class7",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class8",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class9",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class10",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class11",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class12",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class13",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class14",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class15",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class16",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class17",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class18",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class19",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class20",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class21",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class22",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class23",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class24",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class25",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class26",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class27",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class28",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class29",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class30",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class31",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class32",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class33",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class34",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class35",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class36",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class37",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class38",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class39",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class40",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class41",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class42",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class43",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class44",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class45",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class46",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class47",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class48",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class49",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class50",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class51",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class52",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class53",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class54",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class55",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class56",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class57",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class58",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class59",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class60",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class61",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class62",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class63",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class64",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class65",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class66",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class67",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class68",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class69",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class70",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class71",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class72",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class73",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class74",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class75",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class76",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class77",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class78",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class79",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class80",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class81",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class82",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class83",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class84",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class85",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class86",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class87",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class88",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class89",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class90",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class91",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class92",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class93",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class94",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class95",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class96",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class97",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class98",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
+    "name": "simplereflection.manyclasses.classes.Class99",
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      },
+      {
+        "name": "print0",
+        "parameterTypes": []
+      }
+    ]
+  }
+]
