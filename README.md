@@ -149,12 +149,64 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 116 additional packages                                 ... 764 additional object types
 ```
 
-The images are of the same size, as the generated reflection code from Graal for 100 methods (100 classes with 1 method each) isn't that much compared the base infrastructure which is included in every executable. 
+The images are of the same size, as the generated reflection code from Graal for 100
+methods (100 classes with 1 method each) isn't that much compared the base infrastructure
+which is included in every executable.
+
+### no-reflection and no-reflection-many-classes
+
+Question: Why are the two executables nearly the same size (11,91 MB vs 11,98 MB)?
+
+`no-reflection`:
+
+```
+   3,97MB (33,33%) for code area:    7.374 compilation units
+   6,91MB (58,05%) for image heap:   1.634 classes and 90.749 objects
+   1,03MB ( 8,61%) for other data
+  11,91MB in total
+------------------------------------------------------------------------------------------------------------------------
+Top 10 packages in code area:                               Top 10 object types in image heap:
+ 634,03KB java.util                                            1,75MB byte[] for general heap data
+ 310,51KB java.lang                                          790,63KB java.lang.String
+ 265,80KB java.text                                          587,21KB java.lang.Class
+ 235,43KB java.util.regex                                    487,24KB byte[] for java.lang.String
+ 200,68KB com.oracle.svm.jni                                 418,97KB java.util.HashMap$Node
+ 176,75KB java.util.concurrent                               220,47KB java.util.HashMap$Node[]
+ 143,38KB java.math                                          154,69KB java.util.concurrent.ConcurrentHashMap$Node
+ 120,56KB com.oracle.svm.core.reflect                        147,02KB java.lang.String[]
+  94,21KB java.util.logging                                  143,73KB char[]
+  92,03KB java.util.stream                                   139,85KB sun.util.locale.LocaleObjectCache$CacheEntry
+      ... 114 additional packages                                 ... 764 additional object types
+```
+
+`no-reflection-many-classes`:
+
+```
+   4,01MB (33,46%) for code area:    7.475 compilation units  
+   6,93MB (57,82%) for image heap:   1.733 classes and 91.653 objects
+   1,04MB ( 8,72%) for other data
+  11,98MB in total
+
+Top 10 packages in code area:                               Top 10 object types in image heap:
+ 634,10KB java.util                                            1,77MB byte[] for general heap data
+ 310,51KB java.lang                                          800,09KB java.lang.String
+ 265,80KB java.text                                          609,64KB java.lang.Class
+ 235,43KB java.util.regex                                    494,10KB byte[] for java.lang.String
+ 200,68KB com.oracle.svm.jni                                 418,97KB java.util.HashMap$Node
+ 176,75KB java.util.concurrent                               220,47KB java.util.HashMap$Node[]
+ 143,38KB java.math                                          154,69KB java.util.concurrent.ConcurrentHashMap$Node
+ 120,52KB com.oracle.svm.core.reflect                        148,62KB java.lang.String[]
+  94,21KB java.util.logging                                  143,73KB char[]
+  92,03KB java.util.stream                                   139,85KB sun.util.locale.LocaleObjectCach
+      ... 116 additional packages                                 ... 764 additional object types  
+```
+
+The executable sizes are almost the same, as the base infrastructure needed for a
+native-image just shadows the little bit of code which is needed for the classes
+in `no-reflection-many-classes`.
 
 ## Open experiments
 
 * Which is better? Many small classes or few big classes?
     * Both reflection / no reflection
-
-* Does native-image uses padding (or method inlining?) or what is going on?
-    * Binary size for `no-reflection` and `no-reflection-many-classes` is the same
+ 
