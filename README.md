@@ -38,6 +38,8 @@ with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
     * Bigger classes with more methods are better than small classes with less methods,
       because every class has a constructor, which counts towards the executable size
     * Compare `simple-reflection-many-big-classes` and `simple-reflection-10000-classes`
+* Even when not using reflection, fewer big classes are better than many small ones
+    * Compare `no-reflection-many-big-classes` and `no-reflection-10000-classes`
 
 ## Analysis of executable size
 
@@ -98,17 +100,21 @@ Top 10 packages in code area:                               Top 10 object types 
 
 ![](img/no-reflection-many-big-classes-code.png)
 
-The no reflection version contains 3 MB of our code, and 931 KB of `com.oracle` code, which is GraalVM specific code.
+The no reflection version contains 3 MB of our code, and 931 KB of `com.oracle` code,
+which is GraalVM specific code.
 
 ![](img/simple-reflection-many-big-classes-code.png)
 
-The reflection version contains the same 3 MB of our code, but the `com.oracle` code is much bigger (3 MB vs. 931 KB). When digging deeper into this package,
-we find 2 MB of `com.oracle.svm.core.reflect` code, which is only 123 KB in size in the `no-reflection-many-big-classes` dump. The majority of this 2 MB is
+The reflection version contains the same 3 MB of our code, but the `com.oracle` code is
+much bigger (3 MB vs. 931 KB). When digging deeper into this package, we find 2 MB
+of `com.oracle.svm.core.reflect` code, which is only 123 KB in size in
+the `no-reflection-many-big-classes` dump. The majority of this 2 MB is
 `ReflectionAccessorHolder`, which is the code Graal generates for reflection access.
 
 ![](img/no-reflection-many-big-classes-heap.png)
 
-This image shows a visualization of the heap contents which are embedded in the executable.
+This image shows a visualization of the heap contents which are embedded in the
+executable.
 
 ![](img/simple-reflection-many-big-classes-heap.png)
 
@@ -284,3 +290,56 @@ when the method count of the print methods stays the same (100 classes with 100 
 10000 classes with 1 method), the number of constructors is bigger (100 constructors vs
 10000 constructors). You can see that the `java.lang.reflect.Constructor`
 takes 3,21 MB of image heap.
+
+### no-reflection-many-big-classes vs no-reflection-10000-classes
+
+Question: If we don't reflection, what is better? Many small classes or few big classes?
+
+`no-reflection-many-big-classes` (100 classes with 100 methods each):
+
+```
+   7,14MB (41,50%) for code area:   17.375 compilation units
+   8,26MB (47,99%) for image heap:   1.733 classes and 111.653 objects
+   1,81MB (10,50%) for other data
+  17,21MB in total
+------------------------------------------------------------------------------------------------------------------------
+Top 10 packages in code area:                               Top 10 object types in image heap:
+   3,01MB noreflection.manyclasses.big.classes                 3,21MB byte[] for general heap data
+ 634,10KB java.util                                            1,09MB java.lang.String
+ 310,50KB java.lang                                          657,67KB byte[] for java.lang.String
+ 265,80KB java.text                                          609,64KB java.lang.Class
+ 235,43KB java.util.regex                                    418,97KB java.util.HashMap$Node
+ 200,68KB com.oracle.svm.jni                                 226,73KB java.lang.String[]
+ 176,75KB java.util.concurrent                               220,47KB java.util.HashMap$Node[]
+ 143,38KB java.math                                          154,69KB java.util.concurrent.ConcurrentHashMap$Node
+ 125,85KB noreflection.manyclasses.big                       143,73KB char[]
+ 120,52KB com.oracle.svm.core.reflect                        139,85KB sun.util.locale.LocaleObjectCache$CacheEntry
+      ... 116 additional packages                                 ... 764 additional object types
+```
+
+`no-reflection-10000-classes` (10000 classes with 1 method each):
+
+```
+   7,94MB (32,72%) for code area:   17.381 compilation units
+  13,60MB (56,05%) for image heap:  11.633 classes and 180.764 objects
+   2,73MB (11,24%) for other data
+  24,26MB in total
+
+Top 10 packages in code area:                               Top 10 object types in image heap:
+   3,01MB noreflection.classes10k.classes                      3,71MB byte[] for general heap data
+ 938,01KB noreflection.classes10k                              2,79MB java.lang.Class
+ 634,03KB java.util                                            1,69MB java.lang.String
+ 310,50KB java.lang                                            1,17MB byte[] for java.lang.String
+ 265,80KB java.text                                          491,17KB com.oracle.svm.core.util.LazyFinalReference
+ 235,43KB java.util.regex                                    418,97KB java.util.HashMap$Node
+ 200,68KB com.oracle.svm.jni                                 392,91KB c.o.s.c.h.DynamicHub$$Lambda$~31d9af6a7fe68cfc2a1f
+ 176,75KB java.util.concurrent                               303,35KB java.lang.String[]
+ 143,38KB java.math                                          220,47KB java.util.HashMap$Node[]
+ 120,52KB com.oracle.svm.core.reflect                        206,72KB byte[] for method metadata
+      ... 116 additional packages                                 ... 764 additional object types
+```
+
+The executable `no-reflection-10000-classes` is bigger, because there are a lot more
+classes included, which take space in the heap. Additionally, there a are 10000
+constructors, which must be stored and called. Even when not using reflection, fewer big
+classes are better than many small ones.
