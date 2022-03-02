@@ -48,6 +48,14 @@ analyze the contents of an executable. This dashboards reads a `bgv` file, which
 generated in the native build using
 the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
 
+### Methods used with reflection vs. executable size
+
+![](img/size-methods-plot.png)
+
+This chart shows how the executable size changes in relation to the number of methods
+included in `reflect-config.json`. The more methods we include, the bigger the image size.
+Details can be found in the [reflection-plot](reflection-plot/) directory.
+
 ### no-reflection-many-big-classes vs simple-reflection-many-big-classes
 
 Method count: 100 classes with 1 constructor and 100 methods each = 10100
