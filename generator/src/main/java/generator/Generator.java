@@ -20,9 +20,9 @@ import generator.model.ReflectConfigModel;
  * @author Moritz Halbritter
  */
 class Generator {
-	public static final int NUMBER_OF_CLASSES = 8;
+	public static final int NUMBER_OF_CLASSES = 1;
 
-	public static final int METHODS_PER_CLASS = 16384;
+	public static final int METHODS_PER_CLASS = 1;
 
 	public static void main(String[] args) throws IOException, TemplateException {
 		Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);

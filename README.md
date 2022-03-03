@@ -1,21 +1,28 @@
 # Graal native-image experiments
 
+This documents answers the following questions:
+
+* Why is the reflection based executable bigger than the code one?
+* Why is the reflection based executable not that much bigger than the code one when using
+  only a little bit of reflection?
+* Why are executables nearly the same size (11,91 MB vs 11,98 MB), even if one contains 2
+  classes with 1 method each and the other contains 101 classes with 1 method each?
+* If we use reflection, what is better: Many small classes or few big classes?
+* If we don't reflection, what is better: Many small classes or few big classes?
+* What's the correlation between executable size and called methods?
+* What's the correlation between executable size and called methods via reflection?
+* What's the correlation between executable size and introspected methods via reflection?
+
 All experiments have been done
 with `GraalVM 22.0.0.2 Java 17 CE (Java Version 17.0.2+8-jvmci-22.0-b05)`
 
-## Learnings
-
-### Reflection
-
-For more details, read the section "Analysis of executable size" below.
+## Summary
 
 * Executable size doesn't increase much when including some methods (<= 200) called
   through reflection
-    * Compare `no-reflection` and `simple-reflection`
-    * But beware when there are many classes with many methods called through reflection,
-      see `no-reflection-many-big-classes` vs `simple-reflection-many-big-classes` below
     * The base infrastructure used by native-image dominates the executable size in that
       case
+    * But beware when there are many classes with many methods called through reflection
 * Using reflection with a big number (>= 10000) of called methods increases the executable
   size
     * The code region grows a little (Graal includes the `ReflectionAccessorHolder` in the
@@ -24,34 +31,23 @@ For more details, read the section "Analysis of executable size" below.
       most dominant factor of the executable size
 * When including reflection invoke in `reflect-config.json` for methods which are not
   called at runtime, native-image adds the code to the executable
-    * This effectifly disables the tree-shaking for the classes and can bloat the
+    * This effectively disables the tree-shaking for the classes and can bloat the
       executable with dead code
 * When using reflection, minimizing the reflectifly called elements (methods /
   constructors) improves the executable size
     * Bigger classes with more methods are better than small classes with less methods,
       because every class has a constructor, which counts towards the executable size
-    * Compare `simple-reflection-many-big-classes` and `simple-reflection-10000-classes`
 * When using many classes (100) with many methods each (100), the reflection based
-  executable is twice as big as the one without reflection
-    * Compare `no-reflection-many-big-classes` with `simple-reflection-many-big-classes`:
-      15,6 MB vs 31,0 MB
-
-### Reflection querying
-
-* Executable size increases a bit when including reflection query data
-    * Compare `simple-reflection` and `reflection-query`
-    * This amounts to 256 KB executable size when including reflection query data for 100
-      classes with 1 constructor and 100 methods each (10100 methods in total)
-* If only reflection querying is used and not invocation, native-image is clever enough to
-  only include the reflection metadata and not the code for the reflected class/method
-    * Search for `HelloWorldPrinter` in "Used Classes" report from Graal
-      in `reflection-query-only`
-    * In other words: only using reflection querying doesn't disable the tree-shaking
-
-### Executable size
-
+  executable is twice as big as the one without reflection: 15,6 MB vs 31,0 MB
+* Executable size increases a bit when including reflection introspection metadata
+    * This amounts to 256 KB executable size when including reflection introspection
+      metadata for 100 classes with 1 constructor and 100 methods each (10100 methods in
+      total)
+* If only reflection introspection is used and not invocation, native-image is clever
+  enough to only include the reflection metadata and not the code for the reflected
+  class/method
+    * In other words: only using reflection introspection doesn't disable the tree-shaking
 * Even when not using reflection, fewer big classes are better than many small ones
-    * Compare `no-reflection-many-big-classes` and `no-reflection-10000-classes`
 
 ## Analysis of executable size
 
@@ -311,13 +307,25 @@ when the method count of the print methods stays the same (100 classes with 100 
 10000 constructors). You can see that the `java.lang.reflect.Constructor`
 takes 3,21 MB of executable heap.
 
+## Reflection introspection
+
+![](img/reflection-introspection-size-methods-plot.png)
+
+This chart shows how the executable size changes in relation to the number of reflection
+introspection method metadata included in the executable. The more method metadata we
+include, the bigger the executable size. But it doesn't rise as rapidly as when we are
+using reflection for invocation. Details can be found in
+the [reflection-introspection-plot](reflection-introspection-plot/)
+directory.
+
 ## Method called without reflection
 
 ![](img/no-reflection-size-methods-plot.png)
 
 This chart shows how the executable size changes in relation to the number of methods
-included in the executable. The more methods we include, the bigger the executable size. But it doesn't
-rise as rapidly as when we are using reflection. Details can be found in the [no-reflection-plot](no-reflection-plot/) directory.
+included in the executable. The more methods we include, the bigger the executable size.
+But it doesn't rise as rapidly as when we are using reflection. Details can be found in
+the [no-reflection-plot](no-reflection-plot/) directory.
 
 ### no-reflection-many-big-classes vs no-reflection-10000-classes
 

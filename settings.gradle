@@ -20,4 +20,5 @@ include 'simple-reflection-10000-classes'
 include 'no-reflection-10000-classes'
 include 'reflection-plot'
 include 'no-reflection-plot'
+include 'reflection-introspection-plot'
 

@@ -212,7 +212,7 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 115 additional packages                                 ... 764 additional object types
 ```
 
-## 32768 methods
+## 32768 methods (split to 2 classes)
 
 ```
    4,97MB (28,84%) for code area:    7.381 compilation units
@@ -234,7 +234,7 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 116 additional packages                                 ... 764 additional object types
 ```
 
-## 65536 methods
+## 65536 methods (split to 4 classes)
 
 ```
    5,97MB (28,11%) for code area:    7.387 compilation units
@@ -256,7 +256,7 @@ Top 10 packages in code area:                               Top 10 object types 
       ... 116 additional packages                                 ... 764 additional object types
 ```
 
-## 131072 methods
+## 131072 methods (split to 8 classes)
 
 ```
    7,97MB (26,35%) for code area:    7.399 compilation units

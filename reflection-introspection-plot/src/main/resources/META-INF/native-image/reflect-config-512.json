@@ -1,0 +1,1543 @@
+[
+	{
+	"name": "reflectionintrospectionplot.classes.Class0",
+	"queriedMethods" : [
+		{
+		"name": "method0"
+		},
+		{
+		"name": "method1"
+		},
+		{
+		"name": "method2"
+		},
+		{
+		"name": "method3"
+		},
+		{
+		"name": "method4"
+		},
+		{
+		"name": "method5"
+		},
+		{
+		"name": "method6"
+		},
+		{
+		"name": "method7"
+		},
+		{
+		"name": "method8"
+		},
+		{
+		"name": "method9"
+		},
+		{
+		"name": "method10"
+		},
+		{
+		"name": "method11"
+		},
+		{
+		"name": "method12"
+		},
+		{
+		"name": "method13"
+		},
+		{
+		"name": "method14"
+		},
+		{
+		"name": "method15"
+		},
+		{
+		"name": "method16"
+		},
+		{
+		"name": "method17"
+		},
+		{
+		"name": "method18"
+		},
+		{
+		"name": "method19"
+		},
+		{
+		"name": "method20"
+		},
+		{
+		"name": "method21"
+		},
+		{
+		"name": "method22"
+		},
+		{
+		"name": "method23"
+		},
+		{
+		"name": "method24"
+		},
+		{
+		"name": "method25"
+		},
+		{
+		"name": "method26"
+		},
+		{
+		"name": "method27"
+		},
+		{
+		"name": "method28"
+		},
+		{
+		"name": "method29"
+		},
+		{
+		"name": "method30"
+		},
+		{
+		"name": "method31"
+		},
+		{
+		"name": "method32"
+		},
+		{
+		"name": "method33"
+		},
+		{
+		"name": "method34"
+		},
+		{
+		"name": "method35"
+		},
+		{
+		"name": "method36"
+		},
+		{
+		"name": "method37"
+		},
+		{
+		"name": "method38"
+		},
+		{
+		"name": "method39"
+		},
+		{
+		"name": "method40"
+		},
+		{
+		"name": "method41"
+		},
+		{
+		"name": "method42"
+		},
+		{
+		"name": "method43"
+		},
+		{
+		"name": "method44"
+		},
+		{
+		"name": "method45"
+		},
+		{
+		"name": "method46"
+		},
+		{
+		"name": "method47"
+		},
+		{
+		"name": "method48"
+		},
+		{
+		"name": "method49"
+		},
+		{
+		"name": "method50"
+		},
+		{
+		"name": "method51"
+		},
+		{
+		"name": "method52"
+		},
+		{
+		"name": "method53"
+		},
+		{
+		"name": "method54"
+		},
+		{
+		"name": "method55"
+		},
+		{
+		"name": "method56"
+		},
+		{
+		"name": "method57"
+		},
+		{
+		"name": "method58"
+		},
+		{
+		"name": "method59"
+		},
+		{
+		"name": "method60"
+		},
+		{
+		"name": "method61"
+		},
+		{
+		"name": "method62"
+		},
+		{
+		"name": "method63"
+		},
+		{
+		"name": "method64"
+		},
+		{
+		"name": "method65"
+		},
+		{
+		"name": "method66"
+		},
+		{
+		"name": "method67"
+		},
+		{
+		"name": "method68"
+		},
+		{
+		"name": "method69"
+		},
+		{
+		"name": "method70"
+		},
+		{
+		"name": "method71"
+		},
+		{
+		"name": "method72"
+		},
+		{
+		"name": "method73"
+		},
+		{
+		"name": "method74"
+		},
+		{
+		"name": "method75"
+		},
+		{
+		"name": "method76"
+		},
+		{
+		"name": "method77"
+		},
+		{
+		"name": "method78"
+		},
+		{
+		"name": "method79"
+		},
+		{
+		"name": "method80"
+		},
+		{
+		"name": "method81"
+		},
+		{
+		"name": "method82"
+		},
+		{
+		"name": "method83"
+		},
+		{
+		"name": "method84"
+		},
+		{
+		"name": "method85"
+		},
+		{
+		"name": "method86"
+		},
+		{
+		"name": "method87"
+		},
+		{
+		"name": "method88"
+		},
+		{
+		"name": "method89"
+		},
+		{
+		"name": "method90"
+		},
+		{
+		"name": "method91"
+		},
+		{
+		"name": "method92"
+		},
+		{
+		"name": "method93"
+		},
+		{
+		"name": "method94"
+		},
+		{
+		"name": "method95"
+		},
+		{
+		"name": "method96"
+		},
+		{
+		"name": "method97"
+		},
+		{
+		"name": "method98"
+		},
+		{
+		"name": "method99"
+		},
+		{
+		"name": "method100"
+		},
+		{
+		"name": "method101"
+		},
+		{
+		"name": "method102"
+		},
+		{
+		"name": "method103"
+		},
+		{
+		"name": "method104"
+		},
+		{
+		"name": "method105"
+		},
+		{
+		"name": "method106"
+		},
+		{
+		"name": "method107"
+		},
+		{
+		"name": "method108"
+		},
+		{
+		"name": "method109"
+		},
+		{
+		"name": "method110"
+		},
+		{
+		"name": "method111"
+		},
+		{
+		"name": "method112"
+		},
+		{
+		"name": "method113"
+		},
+		{
+		"name": "method114"
+		},
+		{
+		"name": "method115"
+		},
+		{
+		"name": "method116"
+		},
+		{
+		"name": "method117"
+		},
+		{
+		"name": "method118"
+		},
+		{
+		"name": "method119"
+		},
+		{
+		"name": "method120"
+		},
+		{
+		"name": "method121"
+		},
+		{
+		"name": "method122"
+		},
+		{
+		"name": "method123"
+		},
+		{
+		"name": "method124"
+		},
+		{
+		"name": "method125"
+		},
+		{
+		"name": "method126"
+		},
+		{
+		"name": "method127"
+		},
+		{
+		"name": "method128"
+		},
+		{
+		"name": "method129"
+		},
+		{
+		"name": "method130"
+		},
+		{
+		"name": "method131"
+		},
+		{
+		"name": "method132"
+		},
+		{
+		"name": "method133"
+		},
+		{
+		"name": "method134"
+		},
+		{
+		"name": "method135"
+		},
+		{
+		"name": "method136"
+		},
+		{
+		"name": "method137"
+		},
+		{
+		"name": "method138"
+		},
+		{
+		"name": "method139"
+		},
+		{
+		"name": "method140"
+		},
+		{
+		"name": "method141"
+		},
+		{
+		"name": "method142"
+		},
+		{
+		"name": "method143"
+		},
+		{
+		"name": "method144"
+		},
+		{
+		"name": "method145"
+		},
+		{
+		"name": "method146"
+		},
+		{
+		"name": "method147"
+		},
+		{
+		"name": "method148"
+		},
+		{
+		"name": "method149"
+		},
+		{
+		"name": "method150"
+		},
+		{
+		"name": "method151"
+		},
+		{
+		"name": "method152"
+		},
+		{
+		"name": "method153"
+		},
+		{
+		"name": "method154"
+		},
+		{
+		"name": "method155"
+		},
+		{
+		"name": "method156"
+		},
+		{
+		"name": "method157"
+		},
+		{
+		"name": "method158"
+		},
+		{
+		"name": "method159"
+		},
+		{
+		"name": "method160"
+		},
+		{
+		"name": "method161"
+		},
+		{
+		"name": "method162"
+		},
+		{
+		"name": "method163"
+		},
+		{
+		"name": "method164"
+		},
+		{
+		"name": "method165"
+		},
+		{
+		"name": "method166"
+		},
+		{
+		"name": "method167"
+		},
+		{
+		"name": "method168"
+		},
+		{
+		"name": "method169"
+		},
+		{
+		"name": "method170"
+		},
+		{
+		"name": "method171"
+		},
+		{
+		"name": "method172"
+		},
+		{
+		"name": "method173"
+		},
+		{
+		"name": "method174"
+		},
+		{
+		"name": "method175"
+		},
+		{
+		"name": "method176"
+		},
+		{
+		"name": "method177"
+		},
+		{
+		"name": "method178"
+		},
+		{
+		"name": "method179"
+		},
+		{
+		"name": "method180"
+		},
+		{
+		"name": "method181"
+		},
+		{
+		"name": "method182"
+		},
+		{
+		"name": "method183"
+		},
+		{
+		"name": "method184"
+		},
+		{
+		"name": "method185"
+		},
+		{
+		"name": "method186"
+		},
+		{
+		"name": "method187"
+		},
+		{
+		"name": "method188"
+		},
+		{
+		"name": "method189"
+		},
+		{
+		"name": "method190"
+		},
+		{
+		"name": "method191"
+		},
+		{
+		"name": "method192"
+		},
+		{
+		"name": "method193"
+		},
+		{
+		"name": "method194"
+		},
+		{
+		"name": "method195"
+		},
+		{
+		"name": "method196"
+		},
+		{
+		"name": "method197"
+		},
+		{
+		"name": "method198"
+		},
+		{
+		"name": "method199"
+		},
+		{
+		"name": "method200"
+		},
+		{
+		"name": "method201"
+		},
+		{
+		"name": "method202"
+		},
+		{
+		"name": "method203"
+		},
+		{
+		"name": "method204"
+		},
+		{
+		"name": "method205"
+		},
+		{
+		"name": "method206"
+		},
+		{
+		"name": "method207"
+		},
+		{
+		"name": "method208"
+		},
+		{
+		"name": "method209"
+		},
+		{
+		"name": "method210"
+		},
+		{
+		"name": "method211"
+		},
+		{
+		"name": "method212"
+		},
+		{
+		"name": "method213"
+		},
+		{
+		"name": "method214"
+		},
+		{
+		"name": "method215"
+		},
+		{
+		"name": "method216"
+		},
+		{
+		"name": "method217"
+		},
+		{
+		"name": "method218"
+		},
+		{
+		"name": "method219"
+		},
+		{
+		"name": "method220"
+		},
+		{
+		"name": "method221"
+		},
+		{
+		"name": "method222"
+		},
+		{
+		"name": "method223"
+		},
+		{
+		"name": "method224"
+		},
+		{
+		"name": "method225"
+		},
+		{
+		"name": "method226"
+		},
+		{
+		"name": "method227"
+		},
+		{
+		"name": "method228"
+		},
+		{
+		"name": "method229"
+		},
+		{
+		"name": "method230"
+		},
+		{
+		"name": "method231"
+		},
+		{
+		"name": "method232"
+		},
+		{
+		"name": "method233"
+		},
+		{
+		"name": "method234"
+		},
+		{
+		"name": "method235"
+		},
+		{
+		"name": "method236"
+		},
+		{
+		"name": "method237"
+		},
+		{
+		"name": "method238"
+		},
+		{
+		"name": "method239"
+		},
+		{
+		"name": "method240"
+		},
+		{
+		"name": "method241"
+		},
+		{
+		"name": "method242"
+		},
+		{
+		"name": "method243"
+		},
+		{
+		"name": "method244"
+		},
+		{
+		"name": "method245"
+		},
+		{
+		"name": "method246"
+		},
+		{
+		"name": "method247"
+		},
+		{
+		"name": "method248"
+		},
+		{
+		"name": "method249"
+		},
+		{
+		"name": "method250"
+		},
+		{
+		"name": "method251"
+		},
+		{
+		"name": "method252"
+		},
+		{
+		"name": "method253"
+		},
+		{
+		"name": "method254"
+		},
+		{
+		"name": "method255"
+		},
+		{
+		"name": "method256"
+		},
+		{
+		"name": "method257"
+		},
+		{
+		"name": "method258"
+		},
+		{
+		"name": "method259"
+		},
+		{
+		"name": "method260"
+		},
+		{
+		"name": "method261"
+		},
+		{
+		"name": "method262"
+		},
+		{
+		"name": "method263"
+		},
+		{
+		"name": "method264"
+		},
+		{
+		"name": "method265"
+		},
+		{
+		"name": "method266"
+		},
+		{
+		"name": "method267"
+		},
+		{
+		"name": "method268"
+		},
+		{
+		"name": "method269"
+		},
+		{
+		"name": "method270"
+		},
+		{
+		"name": "method271"
+		},
+		{
+		"name": "method272"
+		},
+		{
+		"name": "method273"
+		},
+		{
+		"name": "method274"
+		},
+		{
+		"name": "method275"
+		},
+		{
+		"name": "method276"
+		},
+		{
+		"name": "method277"
+		},
+		{
+		"name": "method278"
+		},
+		{
+		"name": "method279"
+		},
+		{
+		"name": "method280"
+		},
+		{
+		"name": "method281"
+		},
+		{
+		"name": "method282"
+		},
+		{
+		"name": "method283"
+		},
+		{
+		"name": "method284"
+		},
+		{
+		"name": "method285"
+		},
+		{
+		"name": "method286"
+		},
+		{
+		"name": "method287"
+		},
+		{
+		"name": "method288"
+		},
+		{
+		"name": "method289"
+		},
+		{
+		"name": "method290"
+		},
+		{
+		"name": "method291"
+		},
+		{
+		"name": "method292"
+		},
+		{
+		"name": "method293"
+		},
+		{
+		"name": "method294"
+		},
+		{
+		"name": "method295"
+		},
+		{
+		"name": "method296"
+		},
+		{
+		"name": "method297"
+		},
+		{
+		"name": "method298"
+		},
+		{
+		"name": "method299"
+		},
+		{
+		"name": "method300"
+		},
+		{
+		"name": "method301"
+		},
+		{
+		"name": "method302"
+		},
+		{
+		"name": "method303"
+		},
+		{
+		"name": "method304"
+		},
+		{
+		"name": "method305"
+		},
+		{
+		"name": "method306"
+		},
+		{
+		"name": "method307"
+		},
+		{
+		"name": "method308"
+		},
+		{
+		"name": "method309"
+		},
+		{
+		"name": "method310"
+		},
+		{
+		"name": "method311"
+		},
+		{
+		"name": "method312"
+		},
+		{
+		"name": "method313"
+		},
+		{
+		"name": "method314"
+		},
+		{
+		"name": "method315"
+		},
+		{
+		"name": "method316"
+		},
+		{
+		"name": "method317"
+		},
+		{
+		"name": "method318"
+		},
+		{
+		"name": "method319"
+		},
+		{
+		"name": "method320"
+		},
+		{
+		"name": "method321"
+		},
+		{
+		"name": "method322"
+		},
+		{
+		"name": "method323"
+		},
+		{
+		"name": "method324"
+		},
+		{
+		"name": "method325"
+		},
+		{
+		"name": "method326"
+		},
+		{
+		"name": "method327"
+		},
+		{
+		"name": "method328"
+		},
+		{
+		"name": "method329"
+		},
+		{
+		"name": "method330"
+		},
+		{
+		"name": "method331"
+		},
+		{
+		"name": "method332"
+		},
+		{
+		"name": "method333"
+		},
+		{
+		"name": "method334"
+		},
+		{
+		"name": "method335"
+		},
+		{
+		"name": "method336"
+		},
+		{
+		"name": "method337"
+		},
+		{
+		"name": "method338"
+		},
+		{
+		"name": "method339"
+		},
+		{
+		"name": "method340"
+		},
+		{
+		"name": "method341"
+		},
+		{
+		"name": "method342"
+		},
+		{
+		"name": "method343"
+		},
+		{
+		"name": "method344"
+		},
+		{
+		"name": "method345"
+		},
+		{
+		"name": "method346"
+		},
+		{
+		"name": "method347"
+		},
+		{
+		"name": "method348"
+		},
+		{
+		"name": "method349"
+		},
+		{
+		"name": "method350"
+		},
+		{
+		"name": "method351"
+		},
+		{
+		"name": "method352"
+		},
+		{
+		"name": "method353"
+		},
+		{
+		"name": "method354"
+		},
+		{
+		"name": "method355"
+		},
+		{
+		"name": "method356"
+		},
+		{
+		"name": "method357"
+		},
+		{
+		"name": "method358"
+		},
+		{
+		"name": "method359"
+		},
+		{
+		"name": "method360"
+		},
+		{
+		"name": "method361"
+		},
+		{
+		"name": "method362"
+		},
+		{
+		"name": "method363"
+		},
+		{
+		"name": "method364"
+		},
+		{
+		"name": "method365"
+		},
+		{
+		"name": "method366"
+		},
+		{
+		"name": "method367"
+		},
+		{
+		"name": "method368"
+		},
+		{
+		"name": "method369"
+		},
+		{
+		"name": "method370"
+		},
+		{
+		"name": "method371"
+		},
+		{
+		"name": "method372"
+		},
+		{
+		"name": "method373"
+		},
+		{
+		"name": "method374"
+		},
+		{
+		"name": "method375"
+		},
+		{
+		"name": "method376"
+		},
+		{
+		"name": "method377"
+		},
+		{
+		"name": "method378"
+		},
+		{
+		"name": "method379"
+		},
+		{
+		"name": "method380"
+		},
+		{
+		"name": "method381"
+		},
+		{
+		"name": "method382"
+		},
+		{
+		"name": "method383"
+		},
+		{
+		"name": "method384"
+		},
+		{
+		"name": "method385"
+		},
+		{
+		"name": "method386"
+		},
+		{
+		"name": "method387"
+		},
+		{
+		"name": "method388"
+		},
+		{
+		"name": "method389"
+		},
+		{
+		"name": "method390"
+		},
+		{
+		"name": "method391"
+		},
+		{
+		"name": "method392"
+		},
+		{
+		"name": "method393"
+		},
+		{
+		"name": "method394"
+		},
+		{
+		"name": "method395"
+		},
+		{
+		"name": "method396"
+		},
+		{
+		"name": "method397"
+		},
+		{
+		"name": "method398"
+		},
+		{
+		"name": "method399"
+		},
+		{
+		"name": "method400"
+		},
+		{
+		"name": "method401"
+		},
+		{
+		"name": "method402"
+		},
+		{
+		"name": "method403"
+		},
+		{
+		"name": "method404"
+		},
+		{
+		"name": "method405"
+		},
+		{
+		"name": "method406"
+		},
+		{
+		"name": "method407"
+		},
+		{
+		"name": "method408"
+		},
+		{
+		"name": "method409"
+		},
+		{
+		"name": "method410"
+		},
+		{
+		"name": "method411"
+		},
+		{
+		"name": "method412"
+		},
+		{
+		"name": "method413"
+		},
+		{
+		"name": "method414"
+		},
+		{
+		"name": "method415"
+		},
+		{
+		"name": "method416"
+		},
+		{
+		"name": "method417"
+		},
+		{
+		"name": "method418"
+		},
+		{
+		"name": "method419"
+		},
+		{
+		"name": "method420"
+		},
+		{
+		"name": "method421"
+		},
+		{
+		"name": "method422"
+		},
+		{
+		"name": "method423"
+		},
+		{
+		"name": "method424"
+		},
+		{
+		"name": "method425"
+		},
+		{
+		"name": "method426"
+		},
+		{
+		"name": "method427"
+		},
+		{
+		"name": "method428"
+		},
+		{
+		"name": "method429"
+		},
+		{
+		"name": "method430"
+		},
+		{
+		"name": "method431"
+		},
+		{
+		"name": "method432"
+		},
+		{
+		"name": "method433"
+		},
+		{
+		"name": "method434"
+		},
+		{
+		"name": "method435"
+		},
+		{
+		"name": "method436"
+		},
+		{
+		"name": "method437"
+		},
+		{
+		"name": "method438"
+		},
+		{
+		"name": "method439"
+		},
+		{
+		"name": "method440"
+		},
+		{
+		"name": "method441"
+		},
+		{
+		"name": "method442"
+		},
+		{
+		"name": "method443"
+		},
+		{
+		"name": "method444"
+		},
+		{
+		"name": "method445"
+		},
+		{
+		"name": "method446"
+		},
+		{
+		"name": "method447"
+		},
+		{
+		"name": "method448"
+		},
+		{
+		"name": "method449"
+		},
+		{
+		"name": "method450"
+		},
+		{
+		"name": "method451"
+		},
+		{
+		"name": "method452"
+		},
+		{
+		"name": "method453"
+		},
+		{
+		"name": "method454"
+		},
+		{
+		"name": "method455"
+		},
+		{
+		"name": "method456"
+		},
+		{
+		"name": "method457"
+		},
+		{
+		"name": "method458"
+		},
+		{
+		"name": "method459"
+		},
+		{
+		"name": "method460"
+		},
+		{
+		"name": "method461"
+		},
+		{
+		"name": "method462"
+		},
+		{
+		"name": "method463"
+		},
+		{
+		"name": "method464"
+		},
+		{
+		"name": "method465"
+		},
+		{
+		"name": "method466"
+		},
+		{
+		"name": "method467"
+		},
+		{
+		"name": "method468"
+		},
+		{
+		"name": "method469"
+		},
+		{
+		"name": "method470"
+		},
+		{
+		"name": "method471"
+		},
+		{
+		"name": "method472"
+		},
+		{
+		"name": "method473"
+		},
+		{
+		"name": "method474"
+		},
+		{
+		"name": "method475"
+		},
+		{
+		"name": "method476"
+		},
+		{
+		"name": "method477"
+		},
+		{
+		"name": "method478"
+		},
+		{
+		"name": "method479"
+		},
+		{
+		"name": "method480"
+		},
+		{
+		"name": "method481"
+		},
+		{
+		"name": "method482"
+		},
+		{
+		"name": "method483"
+		},
+		{
+		"name": "method484"
+		},
+		{
+		"name": "method485"
+		},
+		{
+		"name": "method486"
+		},
+		{
+		"name": "method487"
+		},
+		{
+		"name": "method488"
+		},
+		{
+		"name": "method489"
+		},
+		{
+		"name": "method490"
+		},
+		{
+		"name": "method491"
+		},
+		{
+		"name": "method492"
+		},
+		{
+		"name": "method493"
+		},
+		{
+		"name": "method494"
+		},
+		{
+		"name": "method495"
+		},
+		{
+		"name": "method496"
+		},
+		{
+		"name": "method497"
+		},
+		{
+		"name": "method498"
+		},
+		{
+		"name": "method499"
+		},
+		{
+		"name": "method500"
+		},
+		{
+		"name": "method501"
+		},
+		{
+		"name": "method502"
+		},
+		{
+		"name": "method503"
+		},
+		{
+		"name": "method504"
+		},
+		{
+		"name": "method505"
+		},
+		{
+		"name": "method506"
+		},
+		{
+		"name": "method507"
+		},
+		{
+		"name": "method508"
+		},
+		{
+		"name": "method509"
+		},
+		{
+		"name": "method510"
+		},
+		{
+		"name": "method511"
+		}
+	]
+	}
+]
