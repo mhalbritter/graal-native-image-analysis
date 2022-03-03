@@ -20,8 +20,9 @@ import generator.model.ReflectConfigModel;
  * @author Moritz Halbritter
  */
 class Generator {
-	public static final int NUMBER_OF_CLASSES = 1;
-		public static final int METHODS_PER_CLASS = 16;
+	public static final int NUMBER_OF_CLASSES = 8;
+
+	public static final int METHODS_PER_CLASS = 16384;
 
 	public static void main(String[] args) throws IOException, TemplateException {
 		Configuration cfg = new Configuration(Configuration.VERSION_2_3_31);
@@ -34,7 +35,8 @@ class Generator {
 
 		// generateClasses(cfg, Files.createTempDirectory("generator"));
 		// printInvocation(cfg);
-		printReflectConfig(cfg, Path.of("/tmp/reflect-config.json"));
+		// printReflectConfig(cfg, Path.of("/tmp/reflect-config.json"));
+		printReflectIntrospectionConfig(cfg, Path.of("/tmp/reflect-config.json"));
 	}
 
 	private static void printReflectConfig(Configuration cfg, Path file) throws IOException, TemplateException {
@@ -43,9 +45,27 @@ class Generator {
 		Template template = cfg.getTemplate("reflect-config.json.ftl");
 
 		Writer writer;
-		if (file == null){
+		if (file == null) {
 			writer = new PrintWriter(System.out);
-		} else {
+		}
+		else {
+			writer = Files.newBufferedWriter(file);
+		}
+
+		template.process(Map.of("model", model), writer);
+		writer.flush();
+	}
+
+	private static void printReflectIntrospectionConfig(Configuration cfg, Path file) throws IOException, TemplateException {
+		ReflectConfigModel model = new ReflectConfigModel(NUMBER_OF_CLASSES, METHODS_PER_CLASS);
+
+		Template template = cfg.getTemplate("reflect-config-introspection.json.ftl");
+
+		Writer writer;
+		if (file == null) {
+			writer = new PrintWriter(System.out);
+		}
+		else {
 			writer = Files.newBufferedWriter(file);
 		}
 
