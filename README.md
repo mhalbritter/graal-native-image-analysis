@@ -62,7 +62,7 @@ the `-H:DashboardDump=filename -H:+DashboardHeap -H:+DashboardCode` parameters.
 
 ### Methods used with reflection vs. executable size
 
-![](img/size-methods-plot.png)
+![](img/reflection-size-methods-plot.png)
 
 This chart shows how the executable size changes in relation to the number of methods
 included in `reflect-config.json`. The more methods we include, the bigger the executable
@@ -310,6 +310,14 @@ when the method count of the print methods stays the same (100 classes with 100 
 10000 classes with 1 method), the number of constructors is bigger (100 constructors vs
 10000 constructors). You can see that the `java.lang.reflect.Constructor`
 takes 3,21 MB of executable heap.
+
+## Method called without reflection
+
+![](img/no-reflection-size-methods-plot.png)
+
+This chart shows how the executable size changes in relation to the number of methods
+included in the executable. The more methods we include, the bigger the executable size. But it doesn't
+rise as rapidly as when we are using reflection. Details can be found in the [no-reflection-plot](no-reflection-plot/) directory.
 
 ### no-reflection-many-big-classes vs no-reflection-10000-classes
 
